@@ -1,102 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <title>Aurore Nadine | Software Engineer Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <nav class="navbar section-content">
 
-            <a href="#" class="logo">
-                <h2 class="logo-text">My Portfolio</h2>
+<body>
+    <header id="main-header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">
+                <span class="logo-text">AN.</span>
             </a>
-            <ul class="nav-log">
-                <button id="menu-close-btn" class="fas fa-times"></button>
-                <li ><a href="#home" class="nav-item">Home</a></li>
-                <li ><a href="#about" class="nav-item">About</a></li>
+            <ul class="nav-links" id="nav-menu">
+                <button id="menu-close-btn" class="fas fa-times" aria-label="Close menu"></button>
+                <li><a href="#home" class="nav-item">Home</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
                 <li><a href="#projects" class="nav-item">Projects</a></li>
                 <li><a href="#skills" class="nav-item">Skills</a></li>
                 <li><a href="#contact" class="nav-item">Contact</a></li>
             </ul>
-            <button id="menu-open-btn" class="fas fa-bars"></button>
+            <button id="menu-open-btn" class="fas fa-bars" aria-label="Open menu"></button>
         </nav>
     </header>
 
     <main>
         <section class="hero" id="home">
-            <div class="section-content">
-                <div class="details">
-                    <h3 class="section-title">Aurore Nadine ISHIMWE</h3>
-                    <p class="description"> I'm a software Engineering student with a deep passion for building robust and scalable application.</p>
+            <div class="container hero-content">
+                <div class="hero-details">
+                    <h1 class="hero-name">Aurore Nadine ISHIMWE</h1>
+                    <p class="hero-tagline">Software Engineering Student</p>
+                    <p class="hero-description">Building robust and scalable applications with passion and precision.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    </div>
                 </div>
-                <div class="home-image">
-                    <img src="me.jpg" alt="" class="img">
+                <div class="hero-image-wrapper">
+                    <img src="me.jpg" alt="Aurore Nadine ISHIMWE" class="profile-img">
                 </div>
             </div>
         </section>
 
         <section class="about" id="about">
-            <div class="section-content">
-                <div class="about-detail">
-                    <h2>About Me</h2>
-            <p>My name is ISHIMWE Aurore Nadine, a student at the Adventist University of Central Africa (AUCA) in Rwanda, pursuing a degree in Software Engineering. I did Physics, Chemistry and Math in high school.<br>
-                As a young girl I dreamt of becaming an architect, about after high school things changed and tech became the most interesting thing to me and since then never regretted pursuiting it rather than architecture. I am currently in my third year in software Engineering, am passionate, hardworking, flexible, cooperative and eager to learn from others</p>
-                </div>
-
-        </div>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-gr">
-                <div class="project">
-                    <h3>Web</h3>
-                    <p>This was a project given by thegym, which I was able to work on. It is a webpage where I was able to talk about myself, aspiration and so on.</p>
-                    <p><a href="https://github.com/aurorenad/web" target="_blank">GitHub Repository</a></p>
-                </div>
-                <div class="project">
-                    <h3>Hospital Management System</h3>
-                    <p>This is a comprehensive oracle database project which I was able to collaborate on which was designed to streamline and optimize hospital operations through efficient data management and relationship tracking</p>
-                    <p><a href="https://github.com/PLSQL-Capstone-Projects-AUCA-2024/WED-EAGLE-HOSPITALMANAGEMENTSYSTEM" target="_blank">GitHub Repository</a></p>
-                </div>
-                <div class="project">
-                    <h3>first-med</h3>
-                    <p>This was a project I was able to collaborate on, which handled different areas in med where our priority was to connect patients to convenient.</p>
-                    <p><a href="https://github.com/nkubana0/first-med" target="_blank">GitHub Repository</a></p>
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2 class="section-title">About Me</h2>
+                        <p>My name is <strong>ISHIMWE Aurore Nadine</strong>, a student at the Adventist University of
+                            Central Africa (AUCA) in Rwanda, pursuing a degree in Software Engineering. My background in
+                            Physics, Chemistry, and Math laid the foundation for my analytical mindset.</p>
+                        <p>Originally dreaming of architecture, I discovered a stronger passion for the digital world.
+                            Now in my third year, I am a dedicated, flexible, and cooperative learner, always eager to
+                            tackle new challenges in tech.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill"><i class="fa-solid fa-bars"></i> HTML</div>
-                <div class="skill"><i class="fa-brands fa-css"></i> CSS</div>
-                <div class="skill"><i class="fa-solid fa-laptop"></i> JavaScript</div>
-                <div class="skill"><i class="fa-brands fa-php"></i> PHP</div>
-                <div class="skill"><i class="fa-brands fa-java"></i> Java</div>
-                <div class="skill"><i class="fa-solid fa-database"></i> Database Management (PL/SQL)</div>
-                <div class="skill"><i class="fa-solid fa-c"></i> Programming in C</div>
-                <div class="skill"><i class="fa-brands fa-github"></i> Git </div>
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-info">
+                            <h3>Personal Webpage</h3>
+                            <p>A personal showcase developed during my time at TheGym, focusing on responsive design and
+                                personal aspirations.</p>
+                            <a href="https://github.com/aurorenad/web" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-info">
+                            <h3>Hospital Management</h3>
+                            <p>An Oracle database project designed to optimize hospital operations through efficient
+                                data relationship tracking.</p>
+                            <a href="https://github.com/PLSQL-Capstone-Projects-AUCA-2024/WED-EAGLE-HOSPITALMANAGEMENTSYSTEM"
+                                target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-info">
+                            <h3>First-Med</h3>
+                            <p>A collaborative healthcare platform connecting patients to convenient medical services
+                                across multiple areas.</p>
+                            <a href="https://github.com/nkubana0/first-med" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:aurorenadine25@gmail.com"><i class="fa-solid fa-envelope"></i> aurorenadine25@gmail.com</a></p>
-            <p>LinkedIn:<a href="https://www.linkedin.com/in/aurore-nadine-ishimwe"><i class="fa-brands fa-linkedIn"></i>Aurore Nadine ISHIMWE</a></p>
-            <p>Phone: <i class="fa-solid fa-phone"></i>+250781940884</p>
-            
+
+        <section class="skills" id="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item"><i class="fab fa-html5"></i> <span>HTML</span></div>
+                    <div class="skill-item"><i class="fab fa-css3-alt"></i> <span>CSS</span></div>
+                    <div class="skill-item"><i class="fab fa-js"></i> <span>JavaScript</span></div>
+                    <div class="skill-item"><i class="fab fa-php"></i> <span>PHP</span></div>
+                    <div class="skill-item"><i class="fab fa-java"></i> <span>Java</span></div>
+                    <div class="skill-item"><i class="fas fa-database"></i> <span>PL/SQL</span></div>
+                    <div class="skill-item"><i class="fas fa-code"></i> <span>C Programming</span></div>
+                    <div class="skill-item"><i class="fab fa-git-alt"></i> <span>Git</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="contact-links">
+                    <a href="mailto:aurorenadine25@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>aurorenadine25@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aurore-nadine-ishimwe" target="_blank" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+250 781 940 884</span>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer class="footer-section">
-            <div class="section-content">
-                <p class="copyright">@ 2025 Aurore Nadine ISHIMWE</p>
-            </div>
-        </footer>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Aurore Nadine ISHIMWE. Portfolio Refined.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple Mobile Menu Logic
+        const openBtn = document.getElementById('menu-open-btn');
+        const closeBtn = document.getElementById('menu-close-btn');
+        const navMenu = document.getElementById('nav-menu');
+
+        openBtn.addEventListener('click', () => navMenu.classList.add('active'));
+        closeBtn.addEventListener('click', () => navMenu.classList.remove('active'));
+
+        // Close menu on link click
+        document.querySelectorAll('.nav-item').forEach(link => {
+            link.addEventListener('click', () => navMenu.classList.remove('active'));
+        });
+    </script>
 </body>
+
 </html>
