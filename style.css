@@ -1,7 +1,7 @@
 :root {
-    --primary: #6366F1; /* Indigo */
-    --primary-light: #EEF2FF;
-    --secondary: #A855F7; /* Purple for gradients */
+    --primary: #E63C19;
+    --primary-light: #FFEDE8;
+    --secondary: #C4331A;
     --background: #FFFFFF;
     --surface: #F8FAFC;
     --text: #0F172A;
@@ -78,7 +78,7 @@ section::before {
 }
 
 #home::before { top: -100px; right: -100px; }
-#projects::before { bottom: 0; left: -200px; background: radial-gradient(circle, #F0F9FF 0%, transparent 70%); }
+#projects::before { bottom: 0; left: -200px; background: radial-gradient(circle, #FFD4C4 0%, transparent 70%); }
 
 /* Reusable Components */
 .section-title {
@@ -288,6 +288,72 @@ header {
     color: var(--text-muted);
     margin-bottom: 24px;
     flex-grow: 1;
+}
+
+.project-featured {
+    grid-column: 1 / -1;
+}
+
+.project-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--primary);
+    background: var(--primary-light);
+    padding: 6px 12px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+}
+
+.project-highlights {
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.project-highlights li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.project-highlights li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.project-tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .project-link {
